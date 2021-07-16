@@ -1,0 +1,9 @@
+production:
+  name: SupeRailsPRO
+development:
+  name: SupeRailsDEV 2
+shared:
+  app_name: SupeRails
+  post_categories:
+    sports: Sports & Outdoors, Running
+    music: Music & Culture

@@ -17,6 +17,12 @@
   </div>
 
   <div class="field">
+    <%= form.label :category %>
+    <!-- <%= form.select :category, [['Sports & Outdoors', 'sports'], ['Music & Culture', 'music']], include_blank: true %> -->
+    <%= form.select :category, Rails.application.config_for(:settings).dig(:post_categories).to_h.invert.to_a, include_blank: true %>
+  </div>
+
+  <div class="field">
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
